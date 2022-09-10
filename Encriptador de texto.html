@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=device-width">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="encabezado">
+                <h1><img src="Contenido/Vector.png" alt="Logo"></h1>
+                <p>Encriptador de texto</p>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <div class="cuadroTexto">
+                    <textarea id="textin" autocomplete="off" autofocus cols="64" rows="25" placeholder="Ingrese aquí su texto"></textarea>
+                </div>
+
+                <div>
+                    <p id="advertencia">Ingrese solo letras minusculas, sin acentos ni caracteres especiales</p>
+                    <input class="boton" id="botEncriptar" type="submit" value="Encriptar" onclick="botonEncriptar()">
+                    <input class="boton" type="submit" value="Desencriptar" onclick="botonDesencriptar()">
+                </div>
+            </section>
+
+            <section>
+                <div class="cuadroTexto">
+                    <textarea id="textout" readonly cols="43" rows="25"></textarea>
+                </div>
+                <div>
+                    <input class="boton" id="botCopiar" type="submit" value="Copiar" onclick="copiar()">
+                </div>
+                
+            </section>
+
+        </main>
+        <footer>
+            <div>
+                <ul class="iconos">
+                    <li>
+                        <a href="https://www.linkedin.com/in/sebastianmontanot/" title="Linkedin" target="_blank"><img class="iconsn" src="Contenido/image.png" alt="Logo Linkedin"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sebastian-montanot" title="GitHub" target="_blank"><img class="iconsn" src="Contenido/image (1).png" alt="Logo GitHub"></a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>© Sebastián Montaño - 2022<br>Alura challenge</br></p>
+            </div>
+        </footer>
+        <script src="script-encriptador.js"></script>
+    </body>
+</html>
