@@ -3,7 +3,7 @@ header{
 }
 
 body{
-    background: url(Contenido/transp.PNG);
+    background: url(./Contenido/transp.PNG);
     background-size: 200px 200px;
 }
 
@@ -38,7 +38,7 @@ textarea{
 }
 
 #textout{
-    background: url(Contenido/Muñeco.png) 50% 20% no-repeat, url(Contenido/Frame\ 5.png) 50% 90% no-repeat;
+    background: url(./Contenido/Muñeco.png) 50% 20% no-repeat, url(./Contenido/Frame\ 5.png) 50% 90% no-repeat;
 }
 
 #advertencia{
