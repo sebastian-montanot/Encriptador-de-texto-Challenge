@@ -3,13 +3,13 @@ header{
 }
 
 body{
-    background: url(Contenido/transp.PNG);
+    background: url(./Contenido/transp.PNG);
     background-size: 200px 200px;
 }
 
 .encabezado{
     position: relative;
-    width: 1440px;
+    width: auto;
     margin: 40px 84px;
 }
 
@@ -25,6 +25,7 @@ body{
 
 main{
     display: flex;
+    width: auto;
 }
 
 .cuadroTexto{
@@ -38,7 +39,7 @@ textarea{
 }
 
 #textout{
-    background: url(Contenido/Muñeco.png) 50% 20% no-repeat, url(Contenido/Frame\ 5.png) 50% 90% no-repeat;
+    background: url(./Contenido/Muñeco.png) 50% 20% no-repeat, url(./Contenido/Frame\ 5.png) 50% 90% no-repeat;
 }
 
 #advertencia{
@@ -85,7 +86,7 @@ footer{
     text-align: center;
     font-size: 20px;
     background: #233449;
-    width: 100%;
+    width: auto;
     height: 120px;
 }
 
@@ -110,3 +111,91 @@ footer p{
     height: 40px;
 }
 
+@media screen and (max-width:480px){
+    
+    .encabezado{
+        position: static top;
+        width: auto;
+        margin: 20px 20px;
+    }
+
+    .encabezado h1{
+        position: static;
+        margin: 1em auto;
+        text-align: center;
+    }
+    
+    .encabezado p{
+        position: static;
+        top: 20px;
+        text-align: center;
+        margin: auto;
+        font-size: 35px;
+    }
+
+    main{
+        display: block;
+        text-align: center;
+        width: auto;
+        margin: 1em auto;
+    }
+
+    .cuadroTexto{
+        margin: 1em auto; 
+        width: fit-content;
+        text-align: center;
+        height: fit-content;
+    }
+
+    textarea{
+        font-size: 15px;
+        width: auto;
+    }
+
+    #textin{
+        font-size: 10px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    #textout{
+        background-position: 50% 10%, 50% 95%;
+    }
+
+    #advertencia{
+        margin: auto;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .boton{
+        width: 160px;
+        height: auto;
+        font-size: auto;
+        margin: 1em auto;
+    }
+
+    #botEncriptar{
+        margin: auto;
+    }
+    
+    #botCopiar{
+        margin: auto;
+    }
+
+    footer{
+        width: auto;
+        text-align: center;
+    }
+
+    footer p{
+        margin: auto;
+    }
+    
+    .iconos{
+        position: static;
+        display: inline-block;
+        text-align: center;
+    }
+    
+}
