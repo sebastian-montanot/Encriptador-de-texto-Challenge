@@ -40,8 +40,12 @@ function desencriptar(strDesencriptado){
 }
 
 function copiar(){
+
     outputTexto.select()
     navigator.clipboard.writeText(outputTexto.value)
     outputTexto.value = ""
-    alert("Texto copiado")
-}
+    }
+
+document.getElementById("botCopiar").addEventListener("click",function(){
+    this.value="¡Copiado!"
+    setTimeout(()=> this.value="Copiar", 1500)})
